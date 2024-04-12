@@ -300,8 +300,6 @@ function lose() {
 
 function winGame() {
   update(locations[6]);
-  button1.remove();
-  button3.remove();
 }
 
 function restart() {
