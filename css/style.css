@@ -62,7 +62,7 @@ body {
   #picture{
     max-width: 600px;
     min-height: 525px;
-    background-image:url(../img/town.jpg);
+/*     background-image:url(../img/town.jpg); */
     background-size:cover;
     background-repeat: no-repeat;
     background-position: bottom;
