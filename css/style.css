@@ -62,7 +62,7 @@ body {
   #picture{
     max-width: 600px;
     min-height: 525px;
-    background-image:url(../img/town.jpg);
+/*     background-image:url(../img/town.jpg); */
     background-size:cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -92,7 +92,7 @@ body {
     cursor: pointer;
     color: #12121f;
     font-size: 16px;
-/*     background-image:url(../img/images.jpg);  */
+    background-image:url(../img/images.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px #feac32;
