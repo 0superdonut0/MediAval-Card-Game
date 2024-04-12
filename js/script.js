@@ -45,14 +45,14 @@ const locations = [
     "button text": ["Go to store", "Go to cave", "Fight dragon"],
     "button functions": [goStore, goCave, fightDragon],
     text: "You are in the town square. You see a sign that says \"Store\".",
-    image:"url(../img/town.jpg)"
+    image:"url(./img/town.jpg)"
   },
   {
     name: "store",
     "button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"],
     "button functions": [buyHealth, buyWeapon, goTown],
     text: "You enter the store.",
-    image:"url(../img/store.jpg)"
+    image:"url(./img/store.jpg)"
   },
   {
     name: "cave",
@@ -66,39 +66,39 @@ const locations = [
     "button text": ["Attack", "Dodge", "Run"],
     "button functions": [attack, dodge, goTown],
     text: "You are fighting a monster.",
-    image:["../img/slime.jpg","../img/beast.jpg","../img/dragon.jpg"]
+    image:["url(./img/slime.jpg)","url(./img/beast.jpg)","url(./img/dragon.jpg)"]
   },
   {
     name: "kill monster",
     "button text": ["Go to town square", "Go to town square", "Go to town square"],
     "button functions": [goTown, goTown, easterEgg],
     text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.',
-    image:"url(../img/win.png)"
+    image:"url(./img/win.png)"
   },
   {
     name: "lose",
     "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
     "button functions": [restart, restart, restart],
     text: "You die. &#x2620;",
-    image:"url(../img/lose.png)"
+    image:"url(./img/lose.png)"
   },
   { 
     name: "win", 
     "button text": ["REPLAY?", "REPLAY?", "REPLAY?"], 
     "button functions": [restart, restart, restart], 
     text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;",
-    image:"url(../img/replay.png)"
+    image:"url(./img/replay.png)"
   },
   {
     name: "easter egg",
     "button text": ["2", "8", "Go to town square?"],
     "button functions": [pickTwo, pickEight, goTown],
     text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!",
-    image:"url(../img/easter.jpg)"
+    image:"url(./img/easter.jpg)"
   }
 ];
 // initialize buttons
-picture.style.backgroundImage = "url(../img/town.jpg)";
+picture.style.backgroundImage = "url(./img/town.jpg)";
 button1.onclick = goStore;
 button1.addEventListener('click',() => {
   document.querySelector('audio').play();
@@ -203,20 +203,20 @@ function sellWeapon() {
 function fightSlime() {
   fighting = 0;
   goFight();
-  picture.style.backgroundImage = "url(../img/slime.jpg)";
+  picture.style.backgroundImage = "url(./img/slime.jpg)";
 
 }
 
 function fightBeast() {
   fighting = 1;
   goFight();
-  picture.style.backgroundImage = "url(../img/beast.jpg)";
+  picture.style.backgroundImage = "url(./img/beast.jpg)";
 }
 
 function fightDragon() {
   fighting = 2;
   goFight();
-  picture.style.backgroundImage = "url(../img/dragon.jpg)";
+  picture.style.backgroundImage = "url(./img/dragon.jpg)";
 }
 
 function goFight() {
