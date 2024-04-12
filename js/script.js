@@ -98,7 +98,7 @@ const locations = [
   }
 ];
 // initialize buttons
-picture.style.backgroundImage = "url(./img/town.jpg)";
+picture.style.backgroundImage = "url(./img/town-start.jpg)";
 button1.onclick = goStore;
 button1.addEventListener('click',() => {
   document.querySelector('audio').play();
